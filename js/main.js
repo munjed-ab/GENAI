@@ -6,10 +6,10 @@
   var W, H, nodes = [];
   var LIFETIME = 2500;  // ms until node fully fades
   var STEP = 20;    // min px movement to spawn new node
-  var CONNECT = 130;   // max px distance to draw a connection
+  var CONNECT = 150;   // max px distance to draw a connection
   var MAX_NODES = 130;   // hard cap
   var lastX = -999, lastY = -999;
-  var PALETTE = ['#1a1a2e', '#1a1a2e', '#1a1a2e', '#00c896', '#ff6b35'];
+  var PALETTE = ['#1a1a2e', '#1f1f5f', '#1a1a2e', '#00c896', '#ff6b35'];
 
   function resize() {
     W = canvas.width  = canvas.offsetWidth;

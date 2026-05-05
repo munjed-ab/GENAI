@@ -13,7 +13,7 @@
   <nav id="navbar" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="nav-logo-text">GEN AI</span>
+        <img src="assets/images/logo.webp" alt="Gen AI" width="120" height="40">
       </a>
       <ul class="nav-links">
         <li><a href="#what-is" data-section="what-is">What Is</a></li>
@@ -53,7 +53,7 @@
         </div>
         <div class="split-media">
           <div class="placeholder-img tall">
-            <span>[ AI-Generated Image<br>Midjourney WEBP<br>800×600 ]</span>
+            <img src="assets/images/what-is.webp" alt="Neural network diagram illustrating generative AI" >
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
         <div class="card teal-shadow offset-up">
           <div class="card-tag">IMAGE</div>
           <div class="placeholder-img">
-            <span>[ AI-Generated Image<br>DALL·E 3 WEBP<br>800×500 ]</span>
+            <img src="assets/images/modality-image.webp" alt="AI-generated bioluminescent landscape — Ideogram" height="200">
           </div>
           <h3>Image Generation</h3>
           <p>Models like DALL·E and Midjourney create photorealistic or artistic images from text prompts. Diffusion models iteratively denoise random noise into coherent, detailed visuals guided by the prompt.</p>
@@ -105,7 +105,7 @@
         <div class="card coral-shadow">
           <div class="card-tag">AUDIO</div>
           <div class="placeholder-img">
-            <span>[ Audio Waveform Visualization<br>Suno AI WEBP<br>800×400 ]</span>
+            <img src="assets/images/modality-audio.webp" alt="AI-generated audio waveform visualization — Suno AI"  height="200" width="300">
           </div>
           <h3>Audio Generation</h3>
           <p>Tools like Suno AI and ElevenLabs synthesize music, speech, and sound effects. Models learn timbre, rhythm, pitch, and harmony from large audio datasets, producing full songs from a single sentence.</p>
@@ -113,13 +113,7 @@
         <div class="card teal-shadow offset-up">
           <div class="card-tag">VIDEO</div>
           <div class="placeholder-video">
-            <figure>
-              <video controls aria-label="AI-generated video example by Runway ML (placeholder)">
-                <track kind="captions" src="assets/videos/example.vtt" srclang="en" label="English" default>
-                Your browser does not support the video tag.
-              </video>
-              <figcaption class="video-label">[ AI-Generated Video Runway ML | Captions: example.vtt ]</figcaption>
-            </figure>
+            <img src="assets/videos/runway_v1.gif" alt="AI-Generated Video — Runway ML" style="width:100%;display:block;">
           </div>
           <h3>Video Generation</h3>
           <p>Runway ML and Sora extend image generation across time; synthesizing coherent motion, scene transitions, and narrative sequences from text descriptions or reference images.</p>
@@ -164,32 +158,35 @@
       <p class="section-note">⚠ All content below is AI-generated and labeled as such per course report requirements.</p>
       <div class="gallery-columns">
         <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder Midjourney, WEBP format">
-          <span>[ AI-Generated Image<br>Midjourney WEBP ]</span>
+            <img src="assets/images/gallery-mid.webp" alt="AI-Generated Image — Midjourney style, brutalist architecture"
+              width="800" height="600">
         </div>
         <div class="placeholder-img gallery-item tall" role="img" aria-label="AI-generated image placeholder DALL·E 3, WEBP format">
-          <span>[ AI-Generated Image<br>DALL·E 3 WEBP ]</span>
+            <img src="assets/images/gallery-dalle.webp" alt="AI-Generated Image — DALL·E 3, geometric digital portrait">
         </div>
         <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder Stable Diffusion, WEBP format">
-          <span>[ AI-Generated Image<br>Stable Diffusion WEBP ]</span>
+          <img src="assets/images/gallery-sd.webp" alt="AI-Generated Image — Stable Diffusion, cyberpunk cityscape">
         </div>
         <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder Adobe Firefly, AVIF format">
-          <span>[ AI-Generated Image<br>Adobe Firefly AVIF ]</span>
+            <img src="assets/images/gallery-firefly.avif"
+              alt="AI-Generated Image — Adobe Firefly, data visualization neural network">
         </div>
         <div class="placeholder-img gallery-item tall" role="img" aria-label="AI-generated image placeholder Ideogram, WEBP format">
-          <span>[ AI-Generated Image<br>Ideogram WEBP ]</span>
+            <img src="assets/images/gallery-ideogram.webp" alt="AI-Generated Image — Ideogram, brutalist typographic poster">
         </div>
         <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder Leonardo AI, WEBP format">
-          <span>[ AI-Generated Image<br>Leonardo AI WEBP ]</span>
+            <img src="assets/images/gallery-leonardo.webp" alt="AI-Generated Image — Leonardo AI, circuit board as coral reef">
         </div>
       </div>
       <div class="video-showcase">
         <div class="video-placeholder-wrap">
           <figure>
-            <video controls aria-label="AI-generated video example by Runway ML (placeholder)">
-              <track kind="captions" src="assets/videos/example.vtt" srclang="en" label="English" default>
-              Your browser does not support the video tag.
+            <video autoplay loop controls src="assets/videos/kling_video_demo.mp4"
+                   aria-label="AI-generated neural network visualization — Kling AI">
+              <track kind="captions" src="assets/videos/genai-demo.vtt"
+                     srclang="en" label="English" default>
             </video>
-            <figcaption class="video-label">[ AI-Generated Video; Runway ML | Synchronized text captions included ]</figcaption>
+            <figcaption class="video-label">AI-Generated Video — Kling AI</figcaption>
           </figure>
         </div>
       </div>
@@ -251,7 +248,6 @@
       </div>
       <div class="footer-note">
         <p>All AI-generated content is labeled throughout this site and fully referenced in the accompanying course report.</p>
-        <p class="footer-deploy">Live at: <a href="#" id="deploy-link">[Deployment URL]</a></p>
       </div>
     </div>
   </footer>
