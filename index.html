@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generative AI in Multimedia — BMM601 Homework Site">
+  <title>Generative AI — BMM601</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-text">GEN AI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#what-is" data-section="what-is">What Is</a></li>
+        <li><a href="#how-it-works" data-section="how-it-works">How It Works</a></li>
+        <li><a href="#modalities" data-section="modalities">Modalities</a></li>
+        <li><a href="#pros-cons" data-section="pros-cons">Pros &amp; Cons</a></li>
+        <li><a href="#examples" data-section="examples">Examples</a></li>
+        <li><a href="#tools" data-section="tools">Tools</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" aria-labelledby="hero-title">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="section-tag" aria-hidden="true">[ MULTIMEDIA SYSTEMS — BMM601 ]</div>
+      <h1 class="hero-title" id="hero-title">GENERATIVE<br>AI</h1>
+      <p class="hero-sub">Exploring how machines create images, audio, and video — and what it means for multimedia.</p>
+      <a href="#what-is" class="btn-primary">EXPLORE <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- WHAT IS GEN AI -->
+  <section id="what-is" class="section bg-mint">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ WHAT IS GEN AI ]</div>
+      <div class="split-layout">
+        <div class="split-text">
+          <h2>What is Generative AI?</h2>
+          <p>Generative AI refers to artificial intelligence systems trained to produce new content — images, audio, video, text — by learning patterns from vast datasets. Unlike traditional AI that classifies or predicts, generative models create.</p>
+          <ul class="feature-list">
+            <li>Learns statistical patterns from massive training datasets</li>
+            <li>Generates novel outputs that mimic learned distributions</li>
+            <li>Powered by architectures like GANs, VAEs, and Diffusion models</li>
+          </ul>
+        </div>
+        <div class="split-media">
+          <div class="placeholder-img tall">
+            <span>[ AI-Generated Image<br>Midjourney — WEBP<br>800×600 ]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section bg-peach">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ HOW IT WORKS ]</div>
+      <h2>From Input to Output</h2>
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="flow-number teal-fill">01</div>
+          <div class="flow-icon">📝</div>
+          <div class="flow-label">Text Prompt<br><small>User describes desired output in natural language</small></div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→→→</div>
+        <div class="flow-step">
+          <div class="flow-number coral-fill">02</div>
+          <div class="flow-icon">🧠</div>
+          <div class="flow-label">AI Model<br><small>Neural network processes prompt against learned weights</small></div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→→→</div>
+        <div class="flow-step">
+          <div class="flow-number teal-fill">03</div>
+          <div class="flow-icon">🎨</div>
+          <div class="flow-label">Generated Output<br><small>Novel image, audio, or video is synthesized</small></div>
+        </div>
+      </div>
+      <p class="flow-desc">Modern generative models use diffusion processes, transformers, or adversarial training to convert simple text descriptions into rich multimedia content at resolutions and quality levels once requiring professional artists.</p>
+    </div>
+  </section>
+
+  <!-- MODALITIES -->
+  <section id="modalities" class="section bg-mint">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ MODALITIES ]</div>
+      <h2>What Can It Generate?</h2>
+      <div class="cards-row">
+        <div class="card teal-shadow offset-up">
+          <div class="card-tag">IMAGE</div>
+          <div class="placeholder-img">
+            <span>[ AI-Generated Image<br>DALL·E 3 — WEBP<br>800×500 ]</span>
+          </div>
+          <h3>Image Generation</h3>
+          <p>Models like DALL·E and Midjourney create photorealistic or artistic images from text prompts. Diffusion models iteratively denoise random noise into coherent, detailed visuals guided by the prompt.</p>
+        </div>
+        <div class="card coral-shadow">
+          <div class="card-tag">AUDIO</div>
+          <div class="placeholder-img">
+            <span>[ Audio Waveform Visualization<br>Suno AI — WEBP<br>800×400 ]</span>
+          </div>
+          <h3>Audio Generation</h3>
+          <p>Tools like Suno AI and ElevenLabs synthesize music, speech, and sound effects. Models learn timbre, rhythm, pitch, and harmony from large audio datasets, producing full songs from a single sentence.</p>
+        </div>
+        <div class="card teal-shadow offset-up">
+          <div class="card-tag">VIDEO</div>
+          <div class="placeholder-video">
+            <figure>
+              <video controls aria-label="AI-generated video example by Runway ML (placeholder)">
+                <track kind="captions" src="assets/videos/example.vtt" srclang="en" label="English" default>
+                Your browser does not support the video tag.
+              </video>
+              <figcaption class="video-label">[ AI-Generated Video — Runway ML | Captions: example.vtt ]</figcaption>
+            </figure>
+          </div>
+          <h3>Video Generation</h3>
+          <p>Runway ML and Sora extend image generation across time — synthesizing coherent motion, scene transitions, and narrative sequences from text descriptions or reference images.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROS & CONS -->
+  <section id="pros-cons" class="section bg-peach">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ PROS &amp; CONS ]</div>
+      <h2>The Trade-offs</h2>
+      <div class="two-col">
+        <div class="pros-col">
+          <h3 class="col-header teal-border">PROS</h3>
+          <ul class="verdict-list">
+            <li><strong>Speed</strong> — Generate hours of creative work in seconds, enabling rapid prototyping and ideation</li>
+            <li><strong>Accessibility</strong> — Non-artists can produce professional-quality visuals without technical skill</li>
+            <li><strong>Iteration</strong> — Rapidly explore dozens of variations of a concept before committing</li>
+            <li><strong>Cost Reduction</strong> — Dramatically lowers production cost for prototyping, mockups, and creative exploration</li>
+          </ul>
+        </div>
+        <div class="cons-col">
+          <h3 class="col-header coral-border">CONS</h3>
+          <ul class="verdict-list">
+            <li><strong>Hallucinations</strong> — Models produce plausible but factually incorrect or visually incoherent outputs</li>
+            <li><strong>Copyright</strong> — Training data provenance and IP ownership is legally contested and unresolved</li>
+            <li><strong>Bias</strong> — Outputs reflect and amplify biases present in training datasets</li>
+            <li><strong>Quality Control</strong> — Generated content requires expert review; errors are subtle and hard to detect</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES GALLERY -->
+  <section id="examples" class="section bg-mint">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ AI-GENERATED EXAMPLES ]</div>
+      <h2>Sample Outputs</h2>
+      <p class="section-note">⚠ All content below is AI-generated and labeled as such per course report requirements.</p>
+      <div class="gallery-columns">
+        <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder — Midjourney, WEBP format">
+          <span>[ AI-Generated Image<br>Midjourney — WEBP ]</span>
+        </div>
+        <div class="placeholder-img gallery-item tall" role="img" aria-label="AI-generated image placeholder — DALL·E 3, WEBP format">
+          <span>[ AI-Generated Image<br>DALL·E 3 — WEBP ]</span>
+        </div>
+        <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder — Stable Diffusion, WEBP format">
+          <span>[ AI-Generated Image<br>Stable Diffusion — WEBP ]</span>
+        </div>
+        <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder — Adobe Firefly, AVIF format">
+          <span>[ AI-Generated Image<br>Adobe Firefly — AVIF ]</span>
+        </div>
+        <div class="placeholder-img gallery-item tall" role="img" aria-label="AI-generated image placeholder — Ideogram, WEBP format">
+          <span>[ AI-Generated Image<br>Ideogram — WEBP ]</span>
+        </div>
+        <div class="placeholder-img gallery-item" role="img" aria-label="AI-generated image placeholder — Leonardo AI, WEBP format">
+          <span>[ AI-Generated Image<br>Leonardo AI — WEBP ]</span>
+        </div>
+      </div>
+      <div class="video-showcase">
+        <div class="video-placeholder-wrap">
+          <figure>
+            <video controls aria-label="AI-generated video example by Runway ML (placeholder)">
+              <track kind="captions" src="assets/videos/example.vtt" srclang="en" label="English" default>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption class="video-label">[ AI-Generated Video — Runway ML | Synchronized text captions included ]</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools" class="section bg-peach">
+    <div class="container">
+      <div class="section-tag" aria-hidden="true">[ TOOLS &amp; PLATFORMS ]</div>
+      <h2>Leading Gen AI Tools</h2>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-cat teal-fill">IMAGE</div>
+          <h3>Midjourney</h3>
+          <p>Discord-based image generator producing highly artistic and photorealistic images via diffusion models. Known for aesthetic quality and stylistic richness.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-cat coral-fill">IMAGE</div>
+          <h3>DALL·E 3</h3>
+          <p>OpenAI's image model, integrated with ChatGPT, known for strong prompt adherence and coherent text rendering within generated images.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-cat teal-fill">IMAGE</div>
+          <h3>Stable Diffusion</h3>
+          <p>Open-source diffusion model enabling local generation with full customization, fine-tuning, and a massive ecosystem of community models.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-cat coral-fill">AUDIO</div>
+          <h3>Suno AI</h3>
+          <p>Generates complete songs with vocals, instruments, and lyrics from a short text description. Produces radio-quality music in seconds.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-cat teal-fill">AUDIO</div>
+          <h3>ElevenLabs</h3>
+          <p>Produces highly realistic AI voices and speech synthesis, including voice cloning from short audio samples with emotional control.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-cat coral-fill">VIDEO</div>
+          <h3>Runway ML</h3>
+          <p>Text-to-video and image-to-video generation platform used by professional filmmakers. Supports motion brush, camera control, and scene extension.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-text">GEN AI</span>
+        <p>Generative AI &amp; Multimedia</p>
+      </div>
+      <div class="footer-info">
+        <p><strong>Course:</strong> ITE_BMM601 — Multimedia Systems</p>
+        <p><strong>Institution:</strong> Syrian Virtual University (SVU)</p>
+        <p><strong>Semester:</strong> Spring 2025</p>
+        <p><strong>Student:</strong> [Student Name]</p>
+      </div>
+      <div class="footer-note">
+        <p>All AI-generated content is labeled throughout this site and fully referenced in the accompanying course report.</p>
+        <p class="footer-deploy">Live at: <a href="#" id="deploy-link">[Deployment URL]</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
