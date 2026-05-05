@@ -1,4 +1,3 @@
-
 (function initNeuralNodes() {
   var canvas = document.getElementById('particles-canvas');
   if (!canvas) return;
